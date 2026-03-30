@@ -7,9 +7,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.95);
-  background-color: #050508;
+  color-scheme: light;
+  color: #1A1C21;
+  background-color: #F0F2F5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,12 +19,11 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: block;
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #050508;
+  background-color: #F0F2F5;
 }
 
 #root {
