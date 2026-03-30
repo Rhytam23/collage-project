@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level Up AI – UI/UX Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;900&family=Manrope:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #111318;
+      color: #e2e2e9;
+      font-family: 'Manrope', sans-serif;
+      min-height: 100vh;
+      padding: 60px 40px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      background: linear-gradient(135deg, #c3c0ff 0%, #ffb0cd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header p {
+      margin-top: 12px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #918fa1;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 18px;
+      background: rgba(79,70,229,0.15);
+      border: 1px solid rgba(79,70,229,0.3);
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: #c3c0ff;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .screen-card {
+      background: #1e1f25;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid #464555;
+      position: relative;
+    }
+    .screen-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #4f46e5, #aa0266);
+    }
+    .screen-header {
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #464555;
+    }
+    .screen-header .title-block h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #e2e2e9;
+      letter-spacing: -0.02em;
+    }
+    .screen-header .title-block p {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #918fa1;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .screen-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: #464555;
+      letter-spacing: -0.04em;
+    }
+    .screen-img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .tags {
+      padding: 16px 28px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      border-top: 1px solid #464555;
+    }
+    .tag {
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .tag-indigo { background: rgba(79,70,229,0.15); color: #c3c0ff; }
+    .tag-pink   { background: rgba(170,2,102,0.15); color: #ffb0cd; }
+    .tag-gray   { background: rgba(255,255,255,0.05); color: #918fa1; }
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #464555;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Level Up AI</h1>
+    <p>UI / UX Design Showcase · Indigo Nebula Design System</p>
+    <span class="badge">Stitch by Google · HACK_O_NIT 2026</span>
+  </header>
+
+  <div class="grid">
+
+    <!-- SCREEN 1 -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="title-block">
+          <h2>Main Dashboard</h2>
+          <p>Overview · Learning Momentum · Leaderboard</p>
+        </div>
+        <span class="screen-num">01</span>
+      </div>
+      <img class="screen-img" src="01_dashboard.png" alt="Level Up AI Dashboard" />
+      <div class="tags">
+        <span class="tag tag-indigo">Dark Mode</span>
+        <span class="tag tag-pink">Gamification</span>
+        <span class="tag tag-gray">Sidebar Nav</span>
+        <span class="tag tag-gray">Stats Cards</span>
+        <span class="tag tag-indigo">Leaderboard</span>
+      </div>
+    </div>
+
+    <!-- SCREEN 2 -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="title-block">
+          <h2>Quiz Arena</h2>
+          <p>AI Difficulty · Timer · Streak · Hard Mode</p>
+        </div>
+        <span class="screen-num">02</span>
+      </div>
+      <img class="screen-img" src="02_quiz_arena.png" alt="Level Up AI Quiz Arena" />
+      <div class="tags">
+        <span class="tag tag-indigo">Multiple Choice</span>
+        <span class="tag tag-pink">Timer Countdown</span>
+        <span class="tag tag-gray">Streak Tracker</span>
+        <span class="tag tag-gray">XP System</span>
+        <span class="tag tag-pink">HARD MODE</span>
+      </div>
+    </div>
+
+    <!-- SCREEN 3 -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="title-block">
+          <h2>Neural Links</h2>
+          <p>Active Connections · AI Suggestions · Exchange Requests</p>
+        </div>
+        <span class="screen-num">03</span>
+      </div>
+      <img class="screen-img" src="03_neural_links.png" alt="Level Up AI Neural Links" />
+      <div class="tags">
+        <span class="tag tag-indigo">Peer Connections</span>
+        <span class="tag tag-pink">AI Match Score</span>
+        <span class="tag tag-gray">Skill Chips</span>
+        <span class="tag tag-gray">Knowledge Exchange</span>
+        <span class="tag tag-indigo">Accept / Decline</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>© 2026 Team Codex · Level Up AI · Neural Sect Architecture</footer>
+</body>
+</html>
